@@ -41,9 +41,35 @@
         <P>Para usar <Em>Italico</Em> ou <Strong>Negrito</Strong>, você utiliza "EM" e "Strong" para escrever, também funciona como "i" e "b" mas, não são consideradas semântica pelo fato de não ter significado</P>
         <br>
         <p><strong>DICA DE ATALHO IMPORTANTE:</strong>Quando for colocar tags entre uma "frase", marque a area selecionada, aperte Ctrl+Shift+P, selecione "Envelope com a abreviatura", depois Enter e digite a tag</p>
+        <br>
         <p>Podemos fazer marcações em frases, usando a tag <mark>&lt;mark&gt;, colocando style(dentro do &lt;&gt;) você pode selecionar uma cor, mas so sera possivel mudar uma vez pelo "HTML"</mark>. Mas para fazer todas da mesma cor, se utiliza &lt;style&gt; e dentro dele "mark { (selecionar cor) }" que assim muda do HTML inteiro</p>
+        <br>
         <p>Também temos como mudar os tamanhos de fonte, com as tags <small>&lt;small&gl;</small> e a tag <big>&lt;big&gt;</big>, mas "big" pode entrar em des-uso</p>
+        <br>
         <p>Para colocar digitos sobrescrito, se utiliza &lt;sup&gt; como em 2<sup>3</sup> e, para colocar subscrito se utiliza &lt;sub&gt;, como em H<sub>2</sub>O</p>
+        <br>
+        <p>A tag &lt;code&gt; é usada para fazer os textos parecerem codigos, <code>Error 404</code></p>
+        <br>
+        <p>Para usar as indentações feitas no código base, utilize a tag &lt;pre&gt;, Ex.:</p>
+        <pre>
+            <code>
+                num = int(imput('Digite um número'0))
+                if num % 2 == 0
+                    print(f'O número {num} é PAR')
+                else:
+                    print(f'O número {num} é IMPAR')
+                print('Fim do programa')
+            </code>
+        </pre>
+        <br>
+        <p>Para fazer citações, podemos usar ou a tag &lt;q&gt; para citações pequenas <br>
+        Como dizia um sabio: <q>O que é um peido para quem ta cagado</q> </p>
+        <p>Ou também podemos usar a tag &lt;blockquote&gt;, para citações de frases de autores em livros</p>
+        <br>
+        <p>Podemos usar a tag &lt;abbr&gt; para mostar o significado de uma abreviação. Ex.: <abbr title="HyperText Markup Language"></abbr>HTML</p>
+        <br>
+        <p>Existem dois tipos de listas, as Ordenadas e Não Ordenadas, as <abbr title="Ordenadas">&lt;OL&gt;</abbr>são usadas como uma ordem, com cada item usando &lt;li&gt;, usando type na frente do &lt;OL&gt;pode mudar o formato da númeração</p>
+        <p>A tag <abbr title="Não ordenada">UL</abbr>ser como uma lista de "compras", aonde não há ordem, mas se deve usar &lt;li&gt; para cada item, e pode se usar o style também.</p>
 
 </body>
 </html>
