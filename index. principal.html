@@ -105,5 +105,21 @@
             <source media="(max-width: 400px)" srcset="Olá menor.png" type="image/png">
             <img src="3d-illustration-of-a-man-posing-waving.png" alt="imagem flexivel">
         </picture>
+        <br>
+        <p>Para colocar um áudio no site ou se usa a tag com a estrutura :
+            <pre>
+                &lt;audio src="HINO DO CRUZEIRO.mp3" controls>&lt;audio&gt;
+            </pre>
+            Mas há uma tag para usar quando o áudio precisar ser compativel com outros navegadores e tipos de midia, segue a estrutura:
+            <pre>
+                &lt;audio preload="metadata" controls loop>
+                    &lt;source src="Arquivo do áudio" type="audio/tipo do arquivo">&lt;/audio&gt;
+            </pre>
+
+            Essa tag fala que o áudio vai ser carregado ao decorrer do play, vai ser um loop e depois os modelos compativeis para o navegador
+        </p>
+        <audio src="HINO DO CRUZEIRO.mp3" controls loop></audio>
+        <br>
+        
 </body>
 </html>
