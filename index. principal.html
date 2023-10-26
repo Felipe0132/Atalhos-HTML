@@ -30,9 +30,11 @@
         seguida. Exemplos: <br> &#x1F526; &#x1F3A2; &#x1F3A1; </p>
         <br>    
         <p>Para colocar imagens deve se usar &lt;img src="" alt=""&lg;, caso o arquivo esteja na mesma pasta que o "programa", usa o Crtl+Espaço dentro das aspas do src. A opoção "alt" serve como um leitor de imagem. Exemplo ;</p>
-        <img src="3d-illustration-of-a-man-posing-waving-png.webp" alt="Imagem de oi"> <p> Também pode usar a URL da imagem</p>
+        
+        <img src="3d-illustration-of-a-man-posing-waving.png" alt="Imagem de oi"> <p> Também pode usar a URL da imagem</p>
          <p>Usar mais de h(1...6), pode servir como subtitulos, como no começo do site</p>
-        <p> Para gerar um paragrafo simulado apenas digitar - loram - </p>
+        
+         <p> Para gerar um paragrafo simulado apenas digitar - loram - </p>
         <br>
         <p>Para mudar a cor do fundo sem CSS, use &lt;Style&lg; e dentro colocar "body { background-color: (Cor); }". Como exemplo:</p>
             <Style> body {
@@ -81,13 +83,27 @@
              </ol>
         </p>
         <br>
-        <p>Também temos as listas de definições, com um termo e se significado embaixo. Para abrir o código se uma &lt;dl&gl; usando a tag &lt;dt&gt; para colocar o termo e &lt;dd&gl; para o significado. Ex.:</p>
+        <p>Também temos as listas de definições, com um termo e se significado embaixo. Para abrir o código se uma &lt;dl&gt; usando a tag &lt;dt&gt; para colocar o termo e &lt;dd&gt; para o significado. Ex.:</p>
         <dl>
             <dt>HTML</dt>
             <dd>Linguagem de marcação para conteúdo de site</dd>
         </dl>
         <br>
-        <p>Para fazer super links basta escolher uma palavra para ser interagivel e colocar &lt;a&gl; nela, assim colocando a URL do site desejado, após isso, coloque --target="_blank" rel="external"-- para fazer o link abrir uma nova página, não sobrecarregando a mesma. Ex. está no inicio do site.</p>
+        <p>Para fazer super links basta escolher uma palavra para ser interagivel e colocar &lt;a&gt; nela, assim colocando a URL do site desejado, após isso, coloque --target="_blank" rel="external"-- para fazer o link abrir uma nova página, não sobrecarregando a mesma. Ex. está no inicio do site.</p>
         <p>Para colocar links de download, no lugar do link você seleciona o arquivo que deseja baixar, depois coloca "type" e a tag de midia para fazer o arquivo ser baixado, no site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml"></a>iana.org mostra todos media types para download </p>
+        <br>
+        <p>Para fazer uma imagem ser compativel com outros tamanhos de tela, se usa a tag &lt;picture&gt; e dentro dela 
+            <pre>
+                
+                &lt;source media="(max-width: "menor número de pixels que a tela tem" )" srcset="Arquivo da imagem.tipo de arquivo" type="image/tipo de arquivo"&gt;
+                &lt;img src="Arquivo . tipo da imagem" alt="imagem flexivel">
+
+            </pre>
+            , com isso o navegador vai ler a imagem no tamnho dela ate um certo tamanho de "tela", para fazer em outro tamanhos é a mesma coisa, muda o tamanho da imagem para uma menor que 
+            o maximo de pixels e apos isso coloque a ordem de tamanhos maximos de ordem crescente. Como o exemplo da foto do site   </p>
+        <picture>
+            <source media="(max-width: 400px)" srcset="Olá menor.png" type="image/png">
+            <img src="3d-illustration-of-a-man-posing-waving.png" alt="imagem flexivel">
+        </picture>
 </body>
 </html>
